@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "37835513-fa6a-43f2-aa74-dc10cba687bc",
+		"name": "vicarius",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8563405"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"1\",\r\n  \"title\": \"Understanding Elasticsearch\",\r\n  \"authors\": [\r\n    {\r\n      \"name\": \"John Doe\"\r\n    },\r\n    {\r\n      \"name\": \"Jane Smith\"\r\n    }\r\n  ],\r\n  \"tags\": [\"Elasticsearch\", \"Search Engine\", \"Technology\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/article",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/article",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/article",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/article",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updating Article\",\r\n  \"authors\": [\r\n    {\r\n      \"name\": \"Fabio\"\r\n    },\r\n    {\r\n      \"name\": \"Jane Smith\"\r\n    }\r\n  ],\r\n  \"tags\": [\"Elasticsearch\", \"Search Engine\", \"Vicarius\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/article/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"article",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/article/id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/article/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"article",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/article/author/tag",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/article/author/Fabio/tag/Vicarius",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"article",
+						"author",
+						"Fabio",
+						"tag",
+						"Vicarius"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/article updating",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updating Article\",\r\n  \"authors\": [\r\n    {\r\n      \"name\": \"Cleston\"\r\n    },\r\n    {\r\n      \"name\": \"Cleise\"\r\n    }\r\n  ],\r\n  \"tags\": [\"Lorem\", \"Ipsum\", \"Etc\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/article/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"article",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
